@@ -1,10 +1,12 @@
+let navigation = document.getElementById('navigation')
+
 window.addEventListener('scroll', onScroll)
 
 onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
-
+  
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
