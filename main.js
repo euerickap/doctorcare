@@ -44,7 +44,7 @@ function activateMenuAtCurrentSection(section) {
   // limites da seção
   const sectionBoundaries = sectionTopReachOrPassedTargetLine && !sectionEndsPassedTargetLine
 
-  const sectionId = section.getAttibute('id')
+  const sectionId = section.getAttribute('id')
   const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
 
   menuElement.classList.remove('active')
